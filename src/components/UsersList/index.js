@@ -37,7 +37,7 @@ class UsersList extends Component {
                           isFetching: false,
                         });
         });
-    }, 222000);
+    }, 2000);
   };
 
   componentDidMount () {
@@ -62,18 +62,18 @@ class UsersList extends Component {
   render () {
 
     return (
-      <div>
-        {
-          this.renderSpinner()
-        }
+
         <ol className={styles.container}>
           {
             this.renderUsers()
           }
+          {
+            this.renderSpinner()
+          }
 
           <button onClick={this.loadData}>LOAD MORE</button>
         </ol>
-      </div>
+
     );
   }
 
