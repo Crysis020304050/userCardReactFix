@@ -13,18 +13,32 @@
 }
 
 .avatar {
-    flex-basis: 120px;
+    flex-basis: 150px;
     object-fit: cover;
     overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    align-self: stretch;
 }
 
 .avatar img {
-    width: inherit;
+    align-self: center;
+}
+
+.avatar div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    align-self: stretch;
+    flex-grow: 1;
 }

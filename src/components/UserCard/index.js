@@ -5,11 +5,11 @@ import Avatar from '../Avatar';
 class UserCard extends Component {
 
   render () {
-    const { firstName, lastName, src } = this.props.user;
+    const { firstName, lastName} = this.props.user;
     return (<Fragment>
       <div className={styles.container}>
         <div className={styles.avatar}>
-          <Avatar src={src}/>
+          <Avatar user={this.props.user}/>
         </div>
           <div className={styles.text}>
               <div>{firstName}</div>
